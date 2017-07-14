@@ -19,9 +19,9 @@
             }], 
       	"properties" : {
             "@version": { "type": "string", "index": "not_analyzed" },
-            "geoip"  : { "type" : "object", "dynamic": true, "properties" : { "location" : { "type" : "geo_point", "lat_lon" : true, "geohash" : true } } },
-            "SourceIPGeo"  : { "type" : "object", "dynamic": true, "properties" : { "location" : { "type" : "geo_point", "lat_lon" : true, "geohash" : true } } },
-            "DestinationIPGeo"  : { "type" : "object", "dynamic": true, "properties" : { "location" : { "type" : "geo_point", "lat_lon" : true, "geohash" : true } } 
+            "geoip"  : { "type" : "object", "dynamic": true, "properties" : { "location" : { "type" : "geo_point" } } },
+            "SourceIPGeo"  : { "type" : "object", "dynamic": true, "properties" : { "location" : { "type" : "geo_point" } } },
+            "DestinationIPGeo"  : { "type" : "object", "dynamic": true, "properties" : { "location" : { "type" : "geo_point" } } 
             } 
         } 
     } 
