@@ -10,6 +10,7 @@ For a complete description of all of the syslog fields for PAN-OS v8.0.x please 
 https://www.paloaltonetworks.com/documentation/80/pan-os/pan-os/monitoring/syslog-field-descriptions
 
 Installation Instructions:
+
 First folllow the excellent instructions available online for setting up the following components:
 - syglog-ng
 - Logstash, Elasticsearch & Kibana v5.5.x
