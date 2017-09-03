@@ -1,0 +1,19 @@
+[
+  {
+    "_id": "Traffic-Dashboard",
+    "_type": "dashboard",
+    "_source": {
+      "title": "Traffic Dashboard",
+      "hits": 0,
+      "description": "",
+      "panelsJSON": "[{\"col\":1,\"id\":\"Traffic-Visualization\",\"panelIndex\":3,\"row\":1,\"size_x\":4,\"size_y\":2,\"type\":\"visualization\"},{\"col\":1,\"id\":\"Top-10-Applications-(Sum-of-Bytes-Transferred)\",\"panelIndex\":4,\"row\":3,\"size_x\":4,\"size_y\":3,\"type\":\"visualization\"},{\"col\":5,\"id\":\"Top-10-Source-Users-slash-IP's-ampersand-Applications-(Sum-of-Bytes-Transferred)\",\"panelIndex\":5,\"row\":1,\"size_x\":8,\"size_y\":5,\"type\":\"visualization\"},{\"col\":1,\"id\":\"Top-10-URL-Categories-(By-Count)\",\"panelIndex\":7,\"row\":6,\"size_x\":4,\"size_y\":3,\"type\":\"visualization\"},{\"col\":5,\"id\":\"2cbe50b0-8e74-11e7-aac4-1b9c84971fc3\",\"panelIndex\":9,\"row\":6,\"size_x\":6,\"size_y\":3,\"type\":\"visualization\"},{\"size_x\":6,\"size_y\":3,\"panelIndex\":10,\"type\":\"visualization\",\"id\":\"Destination-Geolocation-(By-Count)\",\"col\":5,\"row\":9}]",
+      "optionsJSON": "{\"darkTheme\":true}",
+      "uiStateJSON": "{\"P-3\":{\"vis\":{\"colors\":{\"drop\":\"#BF1B00\"}}},\"P-5\":{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-9\":{\"mapCenter\":[47.27922900257082,17.05078125],\"mapZoom\":2}}",
+      "version": 1,
+      "timeRestore": false,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[{\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\"}}}],\"highlightAll\":true,\"version\":true}"
+      }
+    }
+  }
+]
