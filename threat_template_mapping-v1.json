@@ -315,7 +315,7 @@
               }
             }
           },
-          "MonitorTag/IMEI" : {
+          "MonitorTag_IMEI" : {
             "type" : "text",
             "fields" : {
               "keyword" : {
@@ -575,7 +575,7 @@
               }
             }
           },
-          "Threat/ContentType" : {
+          "Threat_ContentType" : {
             "type" : "text",
             "fields" : {
               "keyword" : {
@@ -602,7 +602,7 @@
               }
             }
           },
-          "TunnelID/IMSI" : {
+          "TunnelID_IMSI" : {
             "type" : "long"
           },
           "TunnelType" : {
