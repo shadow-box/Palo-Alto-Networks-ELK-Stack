@@ -2,7 +2,7 @@
   "template" : "traffic*",
   "version" : 1,
   "settings" : {
-    "index.refresh_interval" : "5s"404.583.2651
+    "index.refresh_interval" : "5s"
   },
   "mappings" : {
     "_default_" : {
