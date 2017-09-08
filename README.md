@@ -11,8 +11,8 @@ https://www.paloaltonetworks.com/documentation/80/pan-os/pan-os/monitoring/syslo
 
 Installation Instructions:
 
-First folllow the excellent instructions available online for setting up the following components:
-- syglog-ng
+First follow the excellent instructions available online for setting up the following components:
+- syslog-ng
 - Logstash, Elasticsearch & Kibana v5.5.x
 
 After the setup perform the following:
@@ -23,17 +23,18 @@ syslog-ng:
 Firewall(s)/Panorama: 
 - Configure both the traffic and the threat logs to be sent to the syslog-ng server over TCP/514. 
 - Reference PAN-OS v8.0.x Documentation: https://www.paloaltonetworks.com/documentation/80/pan-os/pan-os/monitoring/configure-syslog-monitoring
-- Ensure syslog-ng is properly recieving and creating two seperate logs; traffic.log and threat.log. 
+- Ensure syslog-ng is properly receiving and creating two separate logs; traffic.log and threat.log. 
 
 Logstash:
+- Download a copy of the MaxMind [GeoLite2 City database](http://geolite.maxmind.com/download/geoip/database/GeoLite2-City.tar.gz) and place at /opt/logstash/GeoLite2-City.mmdb.
 - Copy PAN-OS.conf to the Logstash configuration location and restart the service.
 
 Elasticsearch:
 - Put the Elasticsearch templates provided in this repository with the following commands:
 
-curl -XPUT http://<your-elasticsearch-server>:9200/_template/traffic?pretty -H 'Content-Type: application/json' -d @traffic_template_mapping-v1.json
+`curl -XPUT http://<your-elasticsearch-server>:9200/_template/traffic?pretty -H 'Content-Type: application/json' -d @traffic_template_mapping-v1.json`
 
-curl -XPUT http://<your-elasticsearch-server>:9200/_template/threat?pretty -H 'Content-Type: application/json' -d @threat_template_mapping-v1.json
+`curl -XPUT http://<your-elasticsearch-server>:9200/_template/threat?pretty -H 'Content-Type: application/json' -d @threat_template_mapping-v1.json`
 
 Kibana:
 - Create the index patterns for both traffic and threat with the time filter of @timestamp.
