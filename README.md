@@ -1,4 +1,4 @@
-Palo Alto Networks PAN-OS v8.0.x Elasticsearch v5.5.x Configuration
+Palo Alto Networks PAN-OS v8.0.x Elastic Stack v5.5.x Configuration
 
 The goal of this project was to create a configuration which parses and stores ALL syslog fields within PAN-OS v8.0.x. Most other configurations I came across required editing which fields PAN-OS sent, which inherently meant loss of data fidelity.
 
