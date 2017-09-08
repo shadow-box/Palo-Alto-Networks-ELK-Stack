@@ -2,7 +2,7 @@
   "template" : "traffic*",
   "version" : 1,
   "settings" : {
-    "index.refresh_interval" : "5s"
+    "index.refresh_interval" : "5s"404.583.2651
   },
   "mappings" : {
     "_default_" : {
@@ -255,7 +255,7 @@
               }
             }
           },
-          "MonitorTag/IMEI" : {
+          "MonitorTag_IMEI" : {
             "type" : "text",
             "fields" : {
               "keyword" : {
@@ -486,7 +486,7 @@
             "type" : "date",
             "format" : "yyyy/MM/dd HH:mm:ss||yyyy/MM/dd||epoch_millis"
           },
-          "Threat/ContentType" : {
+          "Threat_ContentType" : {
             "type" : "text",
             "fields" : {
               "keyword" : {
@@ -499,7 +499,7 @@
             "type" : "date",
             "format" : "yyyy/MM/dd HH:mm:ss||yyyy/MM/dd||epoch_millis"
           },
-          "TunnelID/IMSI" : {
+          "TunnelID_IMSI" : {
             "type" : "long"
           },
           "TunnelType" : {
