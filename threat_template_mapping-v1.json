@@ -139,7 +139,7 @@
                 "type" : "text",
                 "fields" : {
                   "keyword" : {
-                    "type" : "short"
+                    "type" : "integer"
                   }
                 }
               },
@@ -479,7 +479,7 @@
                 }
               },
               "dma_code" : {
-                "type" : "long"
+                "type" : "short"
               },
               "ip" : { "type" : "ip" },
               "latitude" : {
@@ -493,8 +493,7 @@
                 "type" : "text",
                 "fields" : {
                   "keyword" : {
-                    "type" : "keyword",
-                    "ignore_above" : 256
+                    "type" : "integer"
                   }
                 }
               },
