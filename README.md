@@ -33,3 +33,6 @@ Elasticsearch:
 Kibana:
 - Create the index patterns for both traffic and threat with the time filter of @timestamp.
 - Optionally upload the Visualizations provided in the Visualizations sub-directory.
+
+Example Visualization Provided:
+![Example Visualization](https://raw.githubusercontent.com/shadow-box/Palo-Alto-Networks-ELK-Stack/master/Visualizations/Visualization-Example.png)
