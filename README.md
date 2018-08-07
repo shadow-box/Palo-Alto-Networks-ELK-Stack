@@ -5,6 +5,7 @@ The goal of this project was to create a configuration which parses and stores A
 Currently this configuration correctly parses all fields from the following log types:
 - Traffic
 - Threat
+- User-ID (Coming Soon)
 
 For a complete description of all of the syslog fields for PAN-OS v8.x please see the documentation below:
 https://www.paloaltonetworks.com/documentation/80/pan-os/pan-os/monitoring/syslog-field-descriptions
