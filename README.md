@@ -1,12 +1,12 @@
-Palo Alto Networks PAN-OS v8.0.x Elastic Stack v5.5.x Configuration
+Palo Alto Networks PAN-OS v8.x Elastic Stack v5.5.x Configuration
 
-The goal of this project was to create a configuration which parses and stores ALL syslog fields within PAN-OS v8.0.x. Most other configurations I came across required editing which fields PAN-OS sent, which inherently meant loss of data fidelity.
+The goal of this project was to create a configuration which parses and stores ALL syslog fields within PAN-OS v8.x. Most other configurations I came across required editing which fields PAN-OS sent, which inherently meant loss of data fidelity.
 
 Currently this configuration correctly parses all fields from the following log types:
 - Traffic
 - Threat
 
-For a complete description of all of the syslog fields for PAN-OS v8.0.x please see the documentation below:
+For a complete description of all of the syslog fields for PAN-OS v8.x please see the documentation below:
 https://www.paloaltonetworks.com/documentation/80/pan-os/pan-os/monitoring/syslog-field-descriptions
 
 Installation Instructions:
@@ -18,7 +18,7 @@ After the setup perform the following:
 
 Firewall(s)/Panorama: 
 - Configure both the traffic and the threat logs to be sent to the Logstash server on port 5514 (both TCP and UDP are supported). 
-- Reference PAN-OS v8.0.x Documentation: https://www.paloaltonetworks.com/documentation/80/pan-os/pan-os/monitoring/configure-syslog-monitoring
+- Reference PAN-OS v8.x Documentation: https://www.paloaltonetworks.com/documentation/80/pan-os/pan-os/monitoring/configure-syslog-monitoring
 
 Logstash:
 - Copy PAN-OS.conf to the Logstash configuration location and restart the service.
