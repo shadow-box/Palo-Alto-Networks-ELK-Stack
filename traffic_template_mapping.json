@@ -121,7 +121,7 @@
                 "type" : "text",
                 "fields" : {
                   "keyword" : {
-                    "type" : "integer"
+                    "type" : "text"
                   }
                 }
               },
@@ -409,7 +409,7 @@
                 "type" : "text",
                 "fields" : {
                   "keyword" : {
-                    "type" : "integer"
+                    "type" : "text"
                   }
                 }
               },
