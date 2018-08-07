@@ -1,4 +1,4 @@
-Palo Alto Networks PAN-OS v8.x Elastic Stack v5.5.x Configuration
+Palo Alto Networks PAN-OS v8.x Elastic Stack v6.x Configuration
 
 The goal of this project was to create a configuration which parses and stores ALL syslog fields within PAN-OS v8.x. Most other configurations I came across required editing which fields PAN-OS sent, which inherently meant loss of data fidelity.
 
@@ -13,7 +13,7 @@ https://www.paloaltonetworks.com/documentation/80/pan-os/pan-os/monitoring/syslo
 Installation Instructions:
 
 First follow the excellent instructions available online for setting up the following components:
-- Logstash, Elasticsearch & Kibana v5.5.x
+- Logstash, Elasticsearch & Kibana v6.x
 
 After the setup perform the following:
 
