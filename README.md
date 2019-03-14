@@ -1,14 +1,14 @@
-Palo Alto Networks PAN-OS v8.x Elastic Stack v6.x Configuration
+Palo Alto Networks PAN-OS v9.x Elastic Stack v6.x Configuration
 
-The goal of this project was to create a configuration which parses and stores ALL syslog fields within PAN-OS v8.x. Most other configurations I came across required editing which fields PAN-OS sent, which inherently meant loss of data fidelity.
+The goal of this project was to create a configuration which parses and stores ALL syslog fields within PAN-OS v9.x. Most other configurations I came across required editing which fields PAN-OS sent, which inherently meant loss of data fidelity.
 
 Currently this configuration correctly parses all fields from the following log types:
 - Traffic
 - Threat (including URL Filtering Logs)
 - User-ID (Coming Soon)
 
-For a complete description of all of the syslog fields for PAN-OS v8.x please see the documentation below:
-https://www.paloaltonetworks.com/documentation/80/pan-os/pan-os/monitoring/syslog-field-descriptions
+For a complete description of all of the syslog fields for PAN-OS v9.x please see the documentation below:
+https://docs.paloaltonetworks.com/pan-os/9-0/pan-os-admin/monitoring/use-syslog-for-monitoring/syslog-field-descriptions.html
 
 Installation Instructions:
 
