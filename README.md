@@ -19,7 +19,7 @@ After the setup perform the following:
 
 Firewall(s)/Panorama: 
 - Configure both the traffic and the threat logs to be sent to the Logstash server on port 5514 (both TCP and UDP are supported). 
-- Reference PAN-OS v8.x Documentation: https://www.paloaltonetworks.com/documentation/80/pan-os/pan-os/monitoring/configure-syslog-monitoring
+- Reference PAN-OS v9.x Documentation: https://docs.paloaltonetworks.com/pan-os/9-0/pan-os-admin/monitoring/use-syslog-for-monitoring/syslog-field-descriptions.html
 
 Logstash:
 - Copy PAN-OS.conf to the Logstash configuration location and restart the service.
