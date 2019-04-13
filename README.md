@@ -27,9 +27,15 @@ Logstash:
 Elasticsearch:
 - Put the Elasticsearch templates provided in this repository with the following commands:
 
-`curl -XPUT http://<your-elasticsearch-server>:9200/_template/traffic?pretty -H 'Content-Type: application/json' -d @traffic_template_mapping-v1.1.json`
+**If using ES 5.x or 6.x**<br/>
+`curl -XPUT http://<your-elasticsearch-server>:9200/_template/traffic?pretty -H 'Content-Type: application/json' -d @traffic_template_mapping.json`
 
-`curl -XPUT http://<your-elasticsearch-server>:9200/_template/threat?pretty -H 'Content-Type: application/json' -d @threat_template_mapping-v1.1.json`
+`curl -XPUT http://<your-elasticsearch-server>:9200/_template/threat?pretty -H 'Content-Type: application/json' -d @threat_template_mapping.json`
+
+**If using ES 7.x or greater**<br/>
+`curl -XPUT http://<your-elasticsearch-server>:9200/_template/traffic?pretty -H 'Content-Type: application/json' -d @traffic_template_mapping-7.x.json`
+
+`curl -XPUT http://<your-elasticsearch-server>:9200/_template/threat?pretty -H 'Content-Type: application/json' -d @threat_template_mapping-7.x.json`
 
 Kibana:
 - Create the index patterns for both traffic and threat with the time filter of @timestamp.
